@@ -1,0 +1,91 @@
+<!-- .row -->
+<div class="row">
+  <section class="footer-section">
+    <div class="footer-top">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="about">
+            <h4>About Us</h4>
+            <img style="height: 40px;width: 60px;" src="/assets/img/logo.png" alt="">
+            <p style="text-align: justify;text-justify: inter-word;">Shree Vahanvati Industries is the chief manufacturer of connecting rod and crank pin bush and air compressor parts.</p>
+            <a routerLink="/about">Read More</a>
+          </div>
+        </div>
+        <!-- <div class="col-md- col-sm-6">
+          <div class="recent-news list-group">
+            <h4>Latest News</h4>
+            <ul>
+              <li>
+                <a href="#" title="">Consectetuer adipiscing aenean commodo ligula eget dolor.</a>
+                <span class="date">February 9, 2016
+                </span>
+              </li>
+              <li>
+                <a href="#" title="">Consectetuer adipiscing aenean commodo ligula eget dolor.</a>
+                <span class="date">February 9, 2016
+                </span>
+              </li>
+              <li>
+                <a href="#" title="">Consectetuer adipiscing aenean commodo ligula eget dolor.</a>
+                <span class="date">February 9, 2016
+                </span>
+              </li>
+
+            </ul>
+          </div>
+        </div> -->
+        <div class="col-md-4 col-sm-6">
+          <div class="services">
+            <h4>Our Products</h4>
+            <ul>
+              <li *ngFor="let category of this.categories"><a routerLink={{urlForProducts(category)}}>{{category|titlecase}}</a></li>
+              <!-- <li><a href="#">Air Compressors</a></li>
+              <li><a href="#">Air Compressor Accessories</a></li>
+              <li><a href="#">Air Compressor Pump & Head </a></li>
+              <li><a href="#">Screw Compressors</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="get-in-Touch">
+            <h4>Get in Touch</h4>
+            <address>
+              <i class="fa fa-map-marker"></i>
+              KATHWADA, AHMEDABAD-382415.
+            </address>
+            <address>
+              <i class="fa fa-phone"></i>
+              +91 7228867795<br>All Days(Except Tuesday), 9:30am to 6:30pm IST
+            </address>
+            <address>
+              <i class="fa fa-envelope-o"></i>
+              <a href="mailto:sales@steelex.com">sales@shreeaircomp.in</a>
+              <br>
+              We reply within 24 hours
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End .footer-top-->
+    <footer class="footer">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="copyright">
+            <p>
+              &copy; ShreeAirComp 2018. All Rights Reserved. | Design by: Harsh & Yash Ventures
+            </p>
+          </div>
+        </div>
+        <!-- <div class="col-md-6">
+          <div class="footer-social">
+            <ul>
+              <li><a href=""><i class="fa fa-facebook"></i>Facebook</a></li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+    </footer>
+  </section>
+</div>
+<!-- .footer-section -->

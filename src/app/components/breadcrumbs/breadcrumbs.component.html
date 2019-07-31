@@ -1,0 +1,20 @@
+<div class="row breadcrumb-area" style="margin-top:-30px;margin-bottom:30px;" *ngIf="getURL() !== '/'"> 
+  <div class="col-md-8 col-xs-12 col-sm-6">
+    <ul class="breadcrumb">
+      <li *ngFor="let hierarch of hierarchy;index as i">
+        <a routerLink="{{join(i)}}" *ngIf="hierarch!==''">{{ breadSvc.replaceAllWith(hierarch,"-"," ") | titlecase}}</a>
+        <a routerLink="{{hierarch}}" *ngIf="hierarch===''">Home</a>
+      </li>
+    </ul>
+  </div>
+  <!-- <div class="col-md-4 col-xs-12 col-sm-6">
+    <div class="header-social">
+      <ul>
+        <li><a href="{{fbLink}}"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="{{twitLink}}"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="{{inLink}}"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="{{gpLink}}"><i class="fa fa-google-plus"></i></a></li>
+      </ul>
+    </div>
+  </div> -->
+</div>

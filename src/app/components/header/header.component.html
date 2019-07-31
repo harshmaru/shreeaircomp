@@ -1,0 +1,80 @@
+<div class="row">
+    <section class="header">
+        <header class="header-wrapper">
+            <div class="header-top">
+                <div class="row">
+                    <div class="col-md-1 col-xs-12 col-sm-3">
+                        <div class="logo" style="padding-top:18px;">
+                            <a title="Shree Air Compressors" href="index.html">
+                                <img src="/assets/img/logo.png" alt="Shree Vahanvati Industries">
+                            </a> 
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-xs-12 col-sm-3">
+                        <h2 style="margin-top: 20px;margin-left: 0px; line-height:100%;">SHREE VAHANVATI INDUSTRIES</h2>
+                        <p>MFG OF AIR COMPRESSORS AND AIR COMPRESSORS PARTS</p>	
+                    </div>
+                    <div class="col-md-2 col-sm-5">
+                        <div class="location">
+                                
+                                <p><i class="fa fa-map-marker"></i>
+                                 KATHWADA,<br>
+                                AHMEDABAD-382415. </p>
+                            </div>
+                        </div>
+                    <div class="col-md-2 col-sm-5">
+                            <div class="phone">
+                                <p><i class="fa fa-phone"></i>
+                                    Call us!</p>
+                                <strong>+91 7228867795</strong>
+                            </div>										
+                    </div>
+
+                </div>
+            </div>
+            <div class="main-nav-bar">
+                <div class="navbar">
+                    <div class="navbar-header navbar-right pull-left">
+                        <!-- offcanvas-trigger-effects -->
+                        <div id="offcanvas-trigger-effects" class="offcanvas">
+                            <button type="button" class="navbar-toggle visible-xs" data-toggle="offcanvas" data-target=".navbar-collapse"
+                                data-placement="left" data-effect="offcanvas-effect">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                        </div>
+                        <!-- offcanvas-trigger-effects -->
+                    </div>
+
+                    <!-- navbar-collapse -->
+                    <nav role="navigation" class="collapse navbar-collapse navbar main-nav">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li><a routerLink=''>Home</a></li>
+                            <li><a routerLink='about'>About Us</a></li>
+                            <li class="dropdown"><a routerLink='products'>Products</a>
+                                <ul class="dropdown-menu">
+                                    <li *ngFor="let category of this.categories"><a routerLink={{urlForProducts(category)}}>{{category|titlecase}}</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/assets/pdf/catalog.pdf">Catalog <sup>pdf</sup></a></li>
+                            <li><a routerLink="contact">Contact Us</a></li>
+                        </ul>
+                        <!-- /navbar-nav -->
+
+                        <div class="navbar-right">
+                            <div class="header-search">
+                                <!-- <form>
+                                    <input type="search" name="search" placeholder="Search">
+                                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </form> -->
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- /navbar-collapse -->
+                </div>
+                <!-- /navbar -->
+            </div>
+            <!-- .main-nav-bar -->
+        </header>
+    </section>
+    <!--End .header -->
+</div>

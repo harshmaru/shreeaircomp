@@ -1,0 +1,12 @@
+::ng-deep .extra-html table{
+    width:100%;
+    color:black !important;
+}
+/* ::ng-deep .extra-html body{
+    color:black;
+} */
+.extra-html{
+    border:1px solid black;
+    padding:10px;
+    color:black;
+}

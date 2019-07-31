@@ -1,0 +1,26 @@
+<div class="wrapper" id="wrapper">
+  <div class="offcanvas-pusher">
+    <div class="content-wrapper">
+      <div class="container">
+        <sac-header></sac-header>
+        <breadcrumbs facebook="https://google.com"></breadcrumbs>
+        <!-- {{router.url|json}} -->
+        <router-outlet></router-outlet>
+        <sac-footer></sac-footer>
+      </div>
+      <!-- .container-->
+    </div>
+    <!--content-wrapper-->
+  </div>
+  <!-- offcanvas-pusher -->
+
+  <div class="offcanvas-menu offcanvas-effect visible-xs">
+    <button type="button" class="close" aria-hidden="true" data-toggle="offcanvas" id="off-canvas-close-btn">&times;</button>
+    <div>
+      <div>
+        <sac-mobile-offset-menu></sac-mobile-offset-menu>
+      </div>
+    </div>
+  </div>
+  <!-- offcanvas-menu end -->
+</div>

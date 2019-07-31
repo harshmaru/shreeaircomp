@@ -1,0 +1,11 @@
+<ul id="menu">
+  <li><a routerLink=''>Home</a></li>
+  <li><a routerLink='about'>About Us</a></li>
+  <!-- <li class="dropdown"><a routerLink='products'>Products</a> -->
+    <!-- <ul class="dropdown-menu"> -->
+      <li *ngFor="let category of this.categories"><a routerLink={{urlForProducts(category)}}>Products - {{category|titlecase}}</a></li>
+    <!-- </ul> -->
+  <!-- </li> -->
+
+  <li><a routerLink="contact">Contact Us</a></li>
+</ul>

@@ -1,0 +1,76 @@
+<div class="row">
+  <section class="service-section">
+    <div class="service-items">
+      <div class="row">
+        <div class="col-md-6 col-sm-6" *ngFor="let category of categories">
+          <div class="service-list">
+            <img width="400vh" height="400vw" [defaultImage]="'/assets/img/loading.gif'" [lazyLoad]="category.image" alt="" />
+            <div class="service-caption">
+              <div class="service-left">
+                <h2>{{category.title}}</h2>
+                <p>
+                  {{category.description}}
+                </p>
+              </div>
+              <div class="service-right">
+                <a [routerLink]="'products/'+commonSvc.replaceAllWith(category.link,' ','-')"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-md-6 col-sm-6">
+          <div class="service-list">
+            <img src="/assets/img/service2.jpg" alt="" />
+            <div class="service-caption">
+              <div class="service-left">
+                <h2>Air Compressor Pump & Head</h2>
+                <p>
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra, per inceptos himenaeos.
+                </p>
+              </div>
+              <div class="service-right">
+                <a href="stacks"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="service-list">
+            <img src="/assets/img/service3.jpg" alt="" />
+            <div class="service-caption">
+              <div class="service-left">
+                <h2>Air Compressor Accessories</h2>
+                <p>
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra, per inceptos himenaeos.
+                </p>
+              </div>
+              <div class="service-right">
+                <a href="tanks.html"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="service-list">
+            <img src="/assets/img/service4.jpg" alt="" />
+            <div class="service-caption">
+              <div class="service-left">
+                <h2>Screw Compressor</h2>
+                <p>
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra, per inceptos himenaeos.
+                </p>
+              </div>
+              <div class="service-right">
+                <a href="beam.html"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <!-- .banner-section -->
+</div>

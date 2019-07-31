@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="our-clients-section">
+    <div class="col-md-12">
+      <div class="our-clients-carousel">
+        <div id="our-client-thumb">
+          <div class="item" *ngFor="let i of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]">
+            <div class="client-logo">
+              <img [src]='["/assets/img/logo/"+i+".png"]' alt="" width="55%" height="100px">
+            </div>
+          </div>
+        </div>
+        <div class="customNavigation client-logo-navigation">
+          <a class="next"><i class="fa fa-angle-right"></i></a>
+          <a class="prev"><i class="fa fa-angle-left"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- .our-clients-section-->
+</div>

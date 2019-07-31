@@ -1,0 +1,48 @@
+<div class="row">
+  <div class="inner-content">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="left-sidebar">
+          <h4>Services</h4>
+          <ul style="cursor:pointer;">
+            <li *ngFor="let product of products"><a (click)="navigateToProduct(product)">{{product}}</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="col-md-9">
+        <div class="single-description">
+          <h1>{{commonSvc.replaceAllWith(commonSvc.getHierarchy()[commonSvc.getHierarchy().length-1],"-"," ")|titlecase}}</h1>
+            <div class="col-sm-6">
+              <img src="http://shreeaircomp.in/wp-content/uploads/2018/01/002b-806x1024.png" width="100%vw" height="100%vh" alt=""></div>
+          <div class="col-sm-6">
+            <p>We are one of the fastest growing manufacturers, exporters, suppliers and service provider from India,
+              involved in
+              designing and developing Air Dryers. Our product line comprises a variety of Refrigeration Air Dryers.
+              These products
+              are highly acknowledged for their optimal performance and their higher level of durability and
+              reliability. </p>
+          </div>
+        </div>
+      </div> -->
+      <div class="col-md-9">
+        <div class="single-description">
+          <h1>{{product.title}}</h1>
+          <div class="row">
+            <div class="col-sm-6">
+              <img [defaultImage]="'/assets/img/loading.gif'" [lazyLoad]="product.image" width="100%vw" height="100%vh" alt=""></div>
+            
+            <div class="col-sm-6">
+              <p>{{product.description}}</p>
+            </div>
+          </div>
+          <div class="row">
+          <br>
+          <!-- <p *ngIf="product.extra!==null && product.extra!==undefined"><br><h2>Warning !! Data Missing</h2></p> -->
+          <div class="extra-html text-center" innerHtml={{product.extra}} *ngIf="product.extra!==null && product.extra!==undefined"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--inner content -->
+</div>

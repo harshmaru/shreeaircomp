@@ -1,0 +1,63 @@
+<div class="row">
+  <div class="inner-content">
+    <div class="service-head">
+      <h2>Our Products</h2>
+      <p>Main Categories</p>
+    </div>
+    <div class="service-inner-list text-center">
+      <div class="row">
+        <div class="col-md-6 col-sm-12" *ngFor="let category of categories">
+          <div class="service-inner-item">
+            <!-- <img src={{category.image}} alt=""> -->
+            <img [defaultImage]="'/assets/img/loading.gif'" [lazyLoad]="category.image" alt="">
+            <div class="service-item-content">
+              <h3>{{category.title}}</h3>
+              <p>{{category.description}}</p>
+              <a [routerLink]="commonSvc.replaceAllWith(category.link,' ','-')">View All</a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-md-6 col-sm-12">
+          <div class="service-inner-item">
+            <img src="/assets/img/service/aircompressoraccessories.jpg" alt="">
+            <div class="service-item-content">
+              <h3>Air Compressor Accessories</h3>
+              <p>We also manufacture accessories for Air Compressors</p>
+              <a href="single-service.html">View All</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="service-inner-item">
+            <img src="/assets/img/service/aircompheadandpump.jpg" alt="">
+            <div class="service-item-content">
+              <h3>Air Compressor Head &amp; Pump</h3>
+              <p>Head and Pump for Air Compressor are also manufactured</p>
+              <a href="single-service.html">View All</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="service-inner-item">
+            <img src="/assets/img/service/aircomp.png" alt="">
+            <div class="service-item-content">
+              <h3>Air Compressors</h3>
+              <p>Air Compressors of Various Categories</p>
+              <a href="single-service.html">View All</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="service-inner-item">
+            <img src="/assets/img/service/screwcomp.jpg" alt="">
+            <div class="service-item-content">
+              <h3>Srew Compressors</h3>
+              <p>We also manufacture accessories for Screw Compressors</p>
+              <a href="single-service.html">View All</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>
